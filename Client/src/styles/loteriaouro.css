@@ -1,0 +1,201 @@
+body {
+  overflow: auto;
+}
+
+.loteria-ouro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.loteria-ouro h2 {
+  color: #ffffff;
+  font-family: 'Baskerville', serif;
+}
+
+.numbers-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.number {
+  padding: 2px 3px;
+  margin: 2px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.selected {
+  background-color: #daa520;
+  color: #ffffff;
+}
+
+.picked-numbers {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.value {
+  color: #ffffff;
+}
+
+.bet-button {
+  background-color: #daa520;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.selected-numbers-table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.selected-numbers-table th,
+.selected-numbers-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  color: #000000;
+}
+
+.selected-numbers-table th {
+  background-color: #daa520;
+}
+
+.selected-numbers-table tr:nth-child(even) {
+  background-color: #daa520;
+}
+
+.selected-numbers-table tr:nth-child(odd) {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.summary-row span {
+  margin-right: 10px;
+}
+
+.pay-button {
+  display: block;
+  background-color: #daa520;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: center;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+  .numbers-container {
+    max-width: 200px;
+  }
+
+  .number {
+    font-size: 14px;
+    padding: 1px 2px;
+    margin: 1px;
+  }
+
+  .picked-numbers {
+    font-size: 14px;
+  }
+
+  .value {
+    font-size: 14px;
+  }
+
+  .bet-button {
+    font-size: 14px;
+  }
+
+  .selected-numbers-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-y: auto;
+    max-height: 200px; /* Defina a altura máxima desejada */
+  }
+
+  .summary-row {
+    font-size: 14px;
+  }
+
+  .pay-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+    background-color: green;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.selected-numbers-table-wrapper {
+  overflow: auto;
+  max-height: 300px; /* Defina a altura máxima desejada */
+}
+
+.popup-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 230px;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000000;
+  padding: 20px;
+  z-index: 9999;
+  border: 1px solid #000000;
+  overflow: auto;
+}
+
+.popup-content .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+

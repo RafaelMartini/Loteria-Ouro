@@ -1,0 +1,70 @@
+.link-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  padding: 10px;
+  background-color: #000000;
+  /* border-radius: 0px; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.LogoGrupos {
+  display: block;
+  margin: 0 auto;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+
+.link-item {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #272727;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Adicionado para centralizar verticalmente */
+  margin-bottom: initial;
+}
+
+
+.link-item:hover {
+  background-color: #141414;
+}
+
+.link-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.link-item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-item-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.link-item-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

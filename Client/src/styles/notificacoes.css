@@ -1,0 +1,4 @@
+.page-container {
+  height: 100vh; /* Define a altura máxima para ocupar a altura total da tela */
+  overflow: auto; /* Habilita a barra de rolagem quando o conteúdo exceder a altura máxima */
+}
